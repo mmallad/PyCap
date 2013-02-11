@@ -1,8 +1,10 @@
 #include "pycapmodule.h"
 static PyObject *PyCap_capture(PyObject *self, PyObject *args)
 {
-	const char *command;
-	if(!PyArg_ParseTuple(args, "s", &command))
+	//TODO
+	//Need to implement filter rule.
+	const char *filter;
+	if(!PyArg_ParseTuple(args, "s", &filter))
 		return NULL;
 	struct pcap_pkthdr header;
 	const u_char *pkt, *pkt_data;
