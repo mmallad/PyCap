@@ -6,4 +6,5 @@ This is Python module written in C. You can make shared library and use ctype.
 ####Example
 
 `import PyCap`
+                                
 `PyCap.capture("tcp")`
